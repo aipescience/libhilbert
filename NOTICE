@@ -1,8 +1,8 @@
 THIS NOTICE APPLIES TO ALL FILES CONTAINED IN THIS AND UNDERLYING FOLDERS
 -------------------------------------------------------------------------
 
-   DBIngestor - Database ingestion library
-   Copyright (c) 2012, Adrian M. Partl <apartl@aip.de>, eScience team
+   libhilbert - N-Dimensional Hilbert Mapping Algorithm library
+   Copyright (c) 2013, Adrian M. Partl <apartl@aip.de>, eScience team
    AIP Potsdam
 
    Licensed under the Apache License, Version 2.0 (the "License");
