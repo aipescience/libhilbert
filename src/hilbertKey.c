@@ -190,7 +190,7 @@ void getCoordFromHKey( double * outCoord, const int32_t m, const double boxSize,
 
 	getIntCoordFromHKey(result, m, dim, key, err);
 
-	if(err != HKEY_ERR_OK) {
+	if(*err != HKEY_ERR_OK) {
 		return;
 	}
 
