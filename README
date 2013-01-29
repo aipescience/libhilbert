@@ -1,0 +1,18 @@
+libhilbert library
+------------------
+
+This library provides an implementation of the Chenyang, Hong, Nengchao
+2008 IEEE N-dimensional Hilber mapping algorithm. The Hilbert generating
+genes are statically compiled into the library, thus producing a rather
+large executable size. Hilbert generating genes can be generated using
+the provided python script.
+
+This library support the forward and backward mapping algorithms from 
+R_N -> R_1 and R_1 -> R_N. The library is used straigth forwardly and
+for guidance and documentation, see hilbertKey.h.
+
+For suggestions, bugs, improvements or a whish to extend the library
+to dynamic Hilbert generating gene creation for dimensions higher than
+N=20 please contact the author:
+
+apartl@aip.de

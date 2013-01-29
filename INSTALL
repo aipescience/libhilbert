@@ -1,0 +1,21 @@
+Installation
+------------
+
+To compile the libhilbert library you need to do the following:
+
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr/local/libhilbert ..
+make all
+sudo make install
+
+Add library and include path to system PATH variables
+
+If you want to extend the hilbert curve to higher dimensions than
+N=10, have a look at tools/hilbertKey.py:
+
+python hilbertKey.py dim
+
+will generate the required Hilbert generating genes up to the 
+given dimension. This needs to be then embedded into a header
+file (see N10.h for comparison) and properly included in hilbertKey.c.
