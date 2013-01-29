@@ -49,7 +49,7 @@ uint64_t getHKeyFromIntCoord( const int32_t m, const int32_t dim, const uint64_t
 	uint64_t tmp[dim];
 
 	if( dim > HILB_MAX_DIM ) {
-		err = HKEY_ERR_DIM;
+		*err = HKEY_ERR_DIM;
 		return 0;
 	}
 
@@ -173,7 +173,7 @@ uint64_t getHKeyFromIntCoord( const int32_t m, const int32_t dim, const uint64_t
 	printf("End result = %llu\n", result);
 #endif
 
-	err = HKEY_ERR_OK;
+	*err = HKEY_ERR_OK;
 	return result;
 }
 
@@ -183,7 +183,7 @@ void getCoordFromHKey( double * outCoord, const int32_t m, const double boxSize,
 	//allocate integer array
 	uint64_t * result = (uint64_t*)malloc(dim * sizeof(uint64_t));
 	if(result == NULL) {
-		err = HKEY_ERR_NOMEM;
+		*err = HKEY_ERR_NOMEM;
 		return;
 	}
 	memset(result, 0, dim * sizeof(uint64_t));
@@ -200,7 +200,7 @@ void getCoordFromHKey( double * outCoord, const int32_t m, const double boxSize,
 
 	free(result);
 
-	err = HKEY_ERR_OK;
+	*err = HKEY_ERR_OK;
 	return;
 }
 
@@ -307,6 +307,6 @@ void getIntCoordFromHKey( uint64_t * outCoord, const int32_t m, const int32_t di
 		}
 	}
 
-	err = HKEY_ERR_OK;
+	*err = HKEY_ERR_OK;
 	return;
 }
